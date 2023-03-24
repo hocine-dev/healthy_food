@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Food Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Nav bar start-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Organic</a>
+            <div class="cardbtnmob"><i class="fa-solid fa-cart-shopping"></i></div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 search px-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class=" mybtn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="cardbtn"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav bar end-->
+    <!--     banner section start -->
+    <section id="main">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-7 pt-5 text-center">
+                    <h1 class="pt-5">Nature Has Always Cared For Us !</h1>
+                    <div class="btn1 mt-5">More Tips</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     banner section end -->
+    <!--     products  section start -->
+    <div id="new">
+        <div class="container py-5">
+            <div class="row mt-5">
+                <div class="col-lg-6 m-auto">
+                    <div class="row text-center">
+                        <div class="col-lg-4">
+                            <img src="images/orange.jpg" class="img-fluid" alt="orange">
+                            <H6>natural</H6>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/papaya.jpg" class="img-fluid" alt="papaya">
+                            <H6>Organic</H6>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/Pom.jpg" class="img-fluid" alt="Pom">
+                            <H6>Healthy</H6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product">
+        <div class="container py-5" id="product_container">
+            <div class="col-lg-4 m-auto">
+                <h1 style="font-weight: bold;">what's trending</h1>
+                <h6 style="color: rgb(248, 26, 92);" class="py-1 px-5 pxmobile">be healthy organic food</h6>
+            </div>
+            <div class="row py-5">
+
+                <div class="col-lg-3">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="images/pom.jpg" class="img-fluid" alt="pom">
+                            <h6>natural pom</h6>
+                            <p>2.99$</p>
+                            <button class="btn-sm add">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="images/raw-onions.jpg" class="img-fluid" alt="raw-onions">
+                            <h6>fresh raw-onions</h6>
+                            <p>3.99$</p>
+                            <button class="btn-sm add">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="images/red-apple.jpg" class="img-fluid" alt="red-apple">
+                            <h6>delicious red apple</h6>
+                            <p>4.49$</p>
+                            <button class="btn-sm add">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="images/melon.jpg" class="img-fluid" alt="melon">
+                            <h6>natural melon</h6>
+                            <p>6.99$</p>
+                            <button class="btn-sm add">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center"> <button class="mybtn m-auto btns" onclick="add_products()">click for more
+            products</button>
+    </div>
+    <!--     products section end -->
+    <!--     about  section start -->
+    <section id="about" class="my-5">
+        <div class="container">
+            <h1 style="font-weight: bold;" class="pxmobile">welcome to our food society</h1>
+            <h6 style="color: rgb(248, 26, 92);" class="py-1 px-5 pxmobile">be healthy organic food</h6>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="images/abut.jpg" class="img-fluid my-5" alt="women">
+
+                </div>
+                <div class="col-lg-7 my-5">
+                    <p>Welcome to our website dedicated to healthy Food , here you can find all healthy food you need
+                        with good prices and recipes from our top chefs - plus all you need to know about your favorite
+                        food.
+                    </p>
+                    <p>All of our information is based on the latest solid, scientific evidence, not fads, and we cite
+                        our sources and references so you can be confident in what we say.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--     about  section end -->
+    <!--     blog section start -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h1 style="font-weight: bold;" class="pxmobile">Check our latest article </h1>
+            <h6 style="color: rgb(248, 26, 92);" class="py-1 px-5 pxmobile">be healthy organic food</h6>
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="images/b1.jpeg" class="img-fluid" alt="bog1">
+                            <h6>
+                                300-Calorie Breakfasts
+                            </h6>
+                            <p>Jump start your day with one of these light and healthy morning meals...</p>
+                            <button class="btn-sm add">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="images/b2.jpeg" class="img-fluid" alt="bog1">
+                            <h6>
+                                Super food Breakfasts
+                            </h6>
+                            <p>Trying to get more superfoods into your diet? Start at breakfast...</p>
+                            <button class="btn-sm add">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <img src="images/b3.jpeg" class="img-fluid" alt="bog1">
+                            <h6>
+                                Healthy Breakfast Recipes
+                            </h6>
+                            <p>Whether you prefer something sweet or savory, these healthy recipes make ...</p>
+                            <button class="btn-sm add">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--     blog section end -->
+
+
+
+
+    <!--     contact section start -->
+    <section id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h1 class="heading-section">Get in touch with us</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <form id="contactForm" name="contactForm" class="contactForm py-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="4"
+                                    placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 btn_container">
+                            <div class="form-group py-5">
+                                <input type="submit" value="Send Message" class=" btn1">
+                                <div class="submitting"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--     contact section end -->
+
+    <!-- back to top btn start -->
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- back to top btn end -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                    <ul class="adress">
+                        <span>Adress</span>
+                        <li>
+                            <p>2530 Flinderation Road IL,USA</p>
+                        </li>
+
+                        <li>
+                            <p>+90 1234 56789</p>
+                        </li>
+
+                        <li>
+                            <p>info@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <ul class="contact">
+                        <span>Links</span>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#product">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#blog">Blog </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <ul class="social">
+                        <span>Social</span>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class=" fa-brands fa-twitter fa-2xl"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-3 text-white copy col">© 2023 Made With <img src="images/red-heart-icon.svg"
+                alt="red heart" class="svg"> By Hocine Dev</div>
+    </footer>
+    <!-- Footer -->
+    <!-- End of .container -->
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+/* importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300&display=swap");
+
+/* globals settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav bar styling start */
+.navbar-brand {
+  font-size: 3rem;
+  color: black;
+  font-family: "Lobster", cursive;
+}
+
+.nav-link {
+  margin-inline: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: auto;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.nav-link:hover::after {
+  background: rgb(248, 26, 92);
+}
+.search {
+  height: 40px;
+  width: 80%;
+  border-radius: 60px;
+  outline: none;
+  border: 2px solid rgb(248, 26, 92);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+.search:focus {
+  border-color: rgb(248, 26, 92);
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(248, 26, 92);
+}
+.mybtn {
+  height: 40px;
+  width: 40%;
+  outline: none;
+  border: none;
+  background: rgb(248, 26, 92);
+  color: white;
+  font-weight: 700;
+  border-radius: 60px;
+}
+/* nav bar styling end */
+
+/* banner styling start */
+
+#main {
+  background: url(images/fr1.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: 50% 50%;
+}
+#main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: cursive;
+}
+#main .btn1 {
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: rgb(248, 26, 92);
+  color: white;
+  font-weight: bold;
+  border-radius: 60px;
+  padding-block: 10px;
+  margin-inline: auto;
+}
+/* banner styling end */
+
+/* products styling start */
+#product {
+  text-transform: capitalize;
+}
+#new h6 {
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-family: cursive;
+}
+.card-body H6,
+.card-body p {
+  text-align: center;
+  padding-top: 5px;
+  transition: 2s;
+}
+.card-body p {
+  font-weight: bold;
+}
+
+.btns {
+  width: fit-content;
+  padding-inline: 30px;
+  text-transform: capitalize;
+  margin-bottom: 40px !important;
+}
+.add {
+  border: none;
+  outline: none;
+  background-color: rgb(248, 26, 92);
+  color: white;
+  font-weight: bold;
+  border-radius: 60px;
+  padding-block: 10px;
+  margin-inline: auto;
+  width: 100%;
+  text-transform: capitalize;
+  transition: 1s;
+  opacity: 0;
+}
+
+.card-body:hover > button {
+  opacity: 1;
+}
+.card:hover {
+  box-shadow: 13px 15px 14px 4px rgba(232, 42, 42, 0.75);
+  transition: 1s;
+}
+/* products  styling end */
+
+/* about styling start */
+#about h1,
+h6 {
+  text-align: center;
+  margin-inline: auto;
+  text-transform: capitalize;
+}
+#about p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#blog h1,
+h6 {
+  text-align: center;
+  margin-inline: auto;
+  text-transform: capitalize;
+}
+#blog p {
+  font-size: 16px;
+  font-weight: bold;
+}
+#blog .card-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* contact styling start */
+#contact h1,
+h6 {
+  text-align: center;
+  margin-inline: auto;
+  text-transform: capitalize;
+}
+#contact p {
+  font-size: 16px;
+  font-weight: bold;
+}
+#contact .btn1 {
+  width: fit-content;
+  padding-block: 20px;
+  padding-inline: 30px;
+  height: auto;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgb(248, 26, 92);
+  color: white;
+  font-weight: bold;
+  margin-inline: auto;
+  text-align: center;
+}
+.btn_container {
+  display: flex;
+  justify-content: center;
+}
+#contact form input {
+  margin-block: 20px;
+}
+#contact form input:focus {
+  border-color: rgb(248, 26, 92);
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(248, 26, 92);
+}
+#contact form textarea:focus {
+  border-color: rgb(248, 26, 92);
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(248, 26, 92);
+}
+/*  contact styling end*/
+/*  back to top styling start*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+/*  back to top styling end*/
+/*  footer styling start*/
+
+footer {
+  background-color: #33383c;
+  padding: 50px 0px;
+  padding-bottom: 10px;
+}
+
+footer ul li {
+  padding: 5px 0px;
+}
+
+.adress span,
+.contact span,
+.social span {
+  color: #fff;
+  font-weight: 800;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: capitalize;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.adress li p,
+.contact li a,
+.social li a {
+  color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.social li {
+  float: left;
+}
+
+.adress,
+.contact,
+.social {
+  list-style: none;
+}
+
+.fa {
+  color: #9c9c9c;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.social li {
+  padding-inline: 10px;
+  transition: 2s;
+}
+
+.social li:hover {
+  transform: rotate(360deg);
+}
+
+.copy {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: verdana;
+  padding: 5px;
+  border-top: 2px solid rgb(248, 26, 92);
+}
+
+.svg:hover {
+  transform: rotate(360deg);
+}
+
+.svg {
+  color: rgb(248, 26, 92);
+  transition: 1.5s;
+  width: 1.3em;
+}
+
+/*  footer styling end*/
+
+/* others */
+.fa-solid,
+.fas {
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardbtn a i,
+.cardbtnmob {
+  color: rgb(248, 26, 92);
+  padding-inline: 10px;
+}
+.cardbtnmob {
+  display: none;
+}
